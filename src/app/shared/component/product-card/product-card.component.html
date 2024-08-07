@@ -1,0 +1,13 @@
+<mat-card class="postCard my-4">
+    <mat-card-title class="title" [matTooltip]="postObj.title">
+        {{postObj.title}}
+    </mat-card-title>
+    <mat-card-content>
+        <div class="userId">
+            <h3 class="mb-0">User ID : <strong> {{postObj.userId}}</strong> </h3>
+        </div>
+        <div class="userBody">
+            {{postObj.body}}
+        </div>
+    </mat-card-content>
+</mat-card>

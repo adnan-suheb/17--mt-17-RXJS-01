@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <div class="row ">
+        <div class="col-md-6 offset-md-3">
+            <mat-card>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-label>
+                        Enter Username
+                    </mat-label>
+                    <input #userForm type="text" matInput>
+                </mat-form-field>
+                <div align="right">
+                    <button mat-raised-button (click)="getUsername()" color="primary">Add Username</button>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <app-consumer1></app-consumer1>
+        </div>
+        <div class="col-md-4">
+            <app-consumer2></app-consumer2>
+        </div>
+        <div class="col-md-4">
+            <app-consumer3></app-consumer3>
+        </div>
+    </div>
+</div>

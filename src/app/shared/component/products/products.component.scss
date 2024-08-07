@@ -1,0 +1,10 @@
+.title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.userBody {
+    height: 100px;
+    overflow-y: scroll;
+}

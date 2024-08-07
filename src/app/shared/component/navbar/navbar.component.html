@@ -1,0 +1,35 @@
+<mat-toolbar class="navbar">
+    <div class="logo">
+        <span>Angular</span>
+    </div>
+    <div class="navLinks">
+        <button class="link" routerLinkActive="active" routerLink="home" mat-button>
+            Home
+        </button>
+        <button class="link" routerLinkActive="active" routerLink="products" mat-button>
+            Products
+        </button>
+        <button class="link" routerLinkActive="active" routerLink="users" mat-button>
+            Users
+        </button>
+    </div>
+    <button mat-icon-button class="menuBtn" (click)="sidenav.toggle()">
+        <mat-icon>{{!sidenav.opened?"menu":"close"}}</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" fixedInViewport="true">
+        <div class="sidenav">
+            <button class="link" (click)="sidenav.close()" routerLinkActive="active" routerLink="home" mat-button>
+                Home
+            </button>
+            <button class="link" (click)="sidenav.close()" routerLinkActive="active" routerLink="products" mat-button>
+                Products
+            </button>
+            <button class="link" (click)="sidenav.close()" routerLinkActive="active" routerLink="users" mat-button>
+                Users
+            </button>
+
+        </div>
+    </mat-sidenav>
+</mat-sidenav-container>

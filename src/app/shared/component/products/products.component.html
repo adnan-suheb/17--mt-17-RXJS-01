@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <!-- <div class="col-md-4 mt-4" *ngFor="let post of postArr">
+            <mat-card class="postCard">
+                <mat-card-title class="title" [matTooltip]="post.title">
+                    {{post.title}}
+                </mat-card-title>
+                <mat-card-content>
+                    <div class="userId">
+                        <h3>User ID : <strong> {{post.userId}}</strong> </h3>
+                    </div>
+                    <div class="userBody">
+                        {{post.body}}
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div> -->
+    </div>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let post of postArr">
+            <app-product-card [postObj]="post"></app-product-card>
+        </div>
+    </div>
+</div>
